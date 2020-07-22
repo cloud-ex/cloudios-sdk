@@ -1,0 +1,6 @@
+framework module SLContractSDK {
+  umbrella header "SLContractSDK.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,137 @@
+/* 
+  Localizable.strings
+  Bymex
+
+  Created by KarlLichterVonRandoll on 2020/4/15.
+  Copyright © 2020 KarlLichterVonRandoll. All rights reserved.
+*/
+
+
+/****** Common *******/
+"common_tabbar_home"="首页";
+"common_tabbar_market"="行情";
+"common_tabbar_otc"="法币";
+"common_tabbar_spot"="币币";
+"common_tabbar_swap"="合约";
+"common_tabbar_follow"="跟单";
+"common_tabbar_assets"="资产";
+
+"common_text_btnComfirm" = "确认";
+"common_text_btnCancel" = "取消";
+"common_text_btnFinish" = "完成";
+
+"common_tip_networkDisconnect"="似乎与网络断开连接";
+"common_tip_networkTimeout"="请求超时";
+"common_tip_copySuccess"="复制成功";
+"common_tip_copy"="复制";
+
+"common_action_sendAgain"="重新发送";
+
+"common_text_search"="搜索";
+"common_tip_logoutDesc"="确认退出当前账号吗？";
+"common_action_logout"="退出登录";
+"common_action_iknow"="我知道了";
+
+"login_text_phoneOrMail"="手机号码/邮箱";
+"login_text_loginPwd"="登录密码";
+"login_text_forgetPwd"="忘记密码";
+"login_action_login" = "登录";
+"login_action_register" = "注册";
+"register_action_email"="邮箱注册";
+"register_action_phone"="手机注册";
+"register_text_mail"="邮箱";
+"register_text_phone"="手机";
+"register_action_setPassword"="设置密码";
+"register_action_repeatedPassword"="确认密码";
+"register_tip_agreement"="注册即代表同意";
+"register_tip_userProperty"="《ByMex用户协议》";
+"register_action_agreement"="《用户协议》";
+"register_tip_and"= "和";
+"register_action_declaration"="《法律声明》";
+"register_text_country"="国家地区";
+"register_text_safeVerify"="安全验证";
+
+/****** Home *******/
+"home_text_signInOrUp"="注册/登录";
+"home_text_deposit"="充值";
+"home_text_transfer"="资金划转";
+"home_text_help"="帮助中心";
+"home_text_guide"="新手指南";
+
+"home_text_dealQty"="成交量";
+
+"account_text_entireBroker"="全名经纪人";
+"account_action_shareInvite"="邀请好友·分享邀请链接";
+"account_text_transfer"="资金划转";
+"account_text_safe"="账户安全";
+"account_text_setting"="设置";
+"account_text_pleaseLogin"="请登录";
+"account_text_welcome"="欢迎登录Bymex";
+
+/****** Contract *******/
+"swap_actionMode_professional"="专业模式";
+"swap_actionMode_lightning"="闪电模式";
+"swap_text_volumeUnit"="张";
+
+//MARK:- order ErrNo
+"contract_normal_order_cancel"="用户取消";
+"contract_normal_order_timeout"="破产委托超时未成交，被系统撤销";
+"contract_normal_order_ASSETS"="用户资产不足，部分委托被系统撤销";
+"contract_normal_order_FREEZE"="冻结保证金不足，部分委托被系统撤销";
+"contract_normal_order_UNDO"="部分委托被系统撤销";
+"contract_normal_order_CLOSE"="经系统试算该委托成交会引起仓位强平，委托被系统撤销";
+"contract_normal_order_reduce"="用户仓位发生自动减仓，部分委托被系统撤销";
+"contract_normal_order_compensate"="分摊对手方穿仓损失，部分委托被系统撤销";
+"contract_normal_order_positionErr"="可平仓位数量不足，部分委托被系统撤销";
+"contract_normal_order_FORBBIDN"="委托类型非法，该委托被系统撤销";
+"contract_normal_order_OPPSITE"="不能与自己的反向订单成交，部分委托被系统撤销";
+"contract_normal_order_FOK"="FOK订单，无法全部成交时被系统撤销";
+"contract_normal_order_IOC"="IOC订单，无法立即成交时部分委托被系统撤销";
+"contract_normal_order_MARKET"="市价单成交价格偏离过大，部分委托被系统撤销";
+"contract_normal_order_PASSIVE"="被动委托，撮合时为taker部分被系统撤销";
+"contract_normal_order_FORCE"="仓位发生强平，未成交委托被系统撤销";
+"contract_normal_order_PLAY"="play订单，部分委托被系统撤销";
+"contract_normal_order_HANDOVER"="仓位被强制交割，部分委托被系统撤销";
+
+//MARK:- planOrder ErrNo
+"contract_normal_planOrder_cancel"="用户取消";
+"contract_normal_planOrder_timeout"="订单超时";
+"contract_normal_planOrder_ASSETS"="%@ %@永续合约%@价格达到%@触发条件单，因账户保证金余额不足，委托无法提交，执行失败";
+"contract_normal_planOrder_FREEZE"="%@ %@永续合约%@价格达到%@触发条件单，因委托撮合成交后将会引起仓位强平，委托无法提交，执行失败";
+"contract_normal_planOrder_UNDO"="订单参数无效，触发失败";
+"contract_normal_planOrder_CLOSE"="%@ %@(合约交易对)永续合约%@价格达到%@触发条件单，因仓位发生强平，无法提交委托，执行失败";
+"contract_normal_planOrder_reduce"="%@ %@永续合约%@价格达到%@触发条件单，因不存在可平仓位，无法提交委托，执行失败";
+"contract_normal_planOrder_compensate"="%@ %@永续合约%@价格达到%@触发条件单，因仓位可平数量不足，无法提交委托，执行失败";
+"contract_normal_planOrder_positionErr"="%@ %@永续合约%@价格达到%@触发条件单，因仓位已被平仓，无法提交委托，执行失败";
+"contract_normal_planOrder_FORBBIDN"="%@ %@永续合约%@价格达到%@触发条件单，因该合约已被暂停交易，无法提交委托，执行失败";
+"contract_normal_planOrder_OPPSITE"="不能与自己的反向订单成交";
+"contract_normal_planOrder_FOK"="%@ %@永续合约%@价格达到%@触发条件单，因该合约已被下线，无法提交委托，执行失败";
+"contract_normal_planOrder_IOC"="条件单执行失败";
+
+"contract_transaction_force_detail_tip0" = "在%1$s，%2$s合约的标记价格%3$s时，您的仓位%4$s-保证金率小于%5$s的维持保证金率，因此触发爆仓";
+"contract_transaction_force_detail_tip1" = "根据保险基金和维持保证金余量，按照价格为%1$s委托入市场，并按照该委托价格结算仓位的收益，但仓位平仓的实际成交价格可能不等于委托价格";
+"contract_transaction_reduce_detail_tip" = "在%1$s，标记价格在%2$s，由于系统保险基金不足，根据盈利排名PnL将你与对手盘在价格%3$s自动减仓";
+"contract_transaction_force_introduce" = "了解强平机制";
+"contract_transaction_reduce_introduce" = "了解自动减仓机制";
+
+
+"contract_makerOrder_open_tips"="注：开仓价格偏离最新价格过大，请注意风险";
+"contract_makerOrder_close_tips"="注：平仓价格偏离最新价格过大，请注意风险";
+
+"contract_text_openswap_risk"="一、当您在合约市场进行交易时，若因市场走势对您不利产生亏损，导致您的持仓保证金不足。本交易所合约将会按照系统约定对您的持仓进行强平委托并披露强平明细，请您留意。\r\n二、请您务必认真阅读并遵守本交易所的业务规则。了解合约机制和运行原理，了解市场的各种风险，合理安排资金进行交易。\r\n三、在某些极端的市场行情下，您可能会难以或无法将持有的未平仓合约平仓。例如，当你的盈利在整个合约市场中有效杠杆PnL中排位第一，且保险基金不足以垫付亏损方的穿仓损失情况下。\r\n四、由于当地法律、法规、政策的变化、合约交易所交易规则的修改、紧急措施的出台等原因，本交易所会提前披露声明，您持有的未平仓合约可能无法继续持有，但持仓保证金和盈利的结余平台仍会兑现！\r\n五、由于非本交易所所能控制的原因，例如：地震、水灾、火灾等不可抗力因素或者计算机系统、通讯系统故障等，可能造成您的指令无法成交或者无法全部成交，您可能会承担由此导致的损失。\r\n六、“套期保值”交易同投机交易一样，同样面临价格波动引起的风险。请您提前了解相关机制。\r\n七、若您将账号借给非本人操作，将可能会影响到您的合约保证金安全性。请务必保证个人账户安全。";
+"contract_transaction_force_detail"="强平明细";
+"contract_transaction_reduce_detail"="减仓明细";
+
+/****** Asset *******/
+
+"asset_action_transfer"="划转";
+"asset_action_transferRecord"="转账记录";
+
+"asset_text_withdraw"="提现";
+"asset_text_fundRate"="资金流水";
+"asset_tips_deposit"="请不要向以下地址充值除 %@ 之外的资产，任何充入此地址的其他资产将不可找回。";
+"asset_action_saveQR"="保存二维码";
+"asset_text_walletAddress"="钱包地址";
+"asset_action_checkBlock"=" 查看区块链浏览器";
+"asset_text_labelMemo"="标签(Memo)";
+"asset_tips_labelmemo"="同时使用充币地址和标签(Memo)才能成功充值";
